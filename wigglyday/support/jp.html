@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../assets/icon.png" type="image/png">
+    <title>WigglyDay - サポート</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Hiragino Sans', sans-serif;
+            background: linear-gradient(135deg, #e8c8d8 0%, #b8a8d8 100%);
+            min-height: 100vh;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .lang-switch {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 30px;
+        }
+
+        .lang-switch a {
+            padding: 8px 16px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-size: 0.85rem;
+            transition: all 0.2s;
+        }
+
+        .lang-switch a.active {
+            background: rgba(255,255,255,0.9);
+            color: #7b68a8;
+            font-weight: 600;
+        }
+
+        .lang-switch a:not(.active) {
+            background: rgba(255,255,255,0.4);
+            color: #555;
+        }
+
+        .lang-switch a:hover:not(.active) {
+            background: rgba(255,255,255,0.7);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .app-icon {
+            width: 80px;
+            height: 80px;
+            border-radius: 18px;
+            margin: 0 auto 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+            overflow: hidden;
+        }
+
+        .app-icon img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            color: #7b68a8;
+            margin-bottom: 5px;
+        }
+
+        .subtitle {
+            color: #666;
+            font-size: 1rem;
+        }
+
+        .section {
+            background: rgba(255,255,255,0.9);
+            border-radius: 20px;
+            padding: 30px;
+            margin-bottom: 25px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        }
+
+        .section h2 {
+            color: #7b68a8;
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e8c8d8;
+        }
+
+        .faq-item {
+            margin-bottom: 20px;
+        }
+
+        .faq-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .faq-question {
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+
+        .faq-question::before {
+            content: "Q";
+            background: #7b68a8;
+            color: white;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8rem;
+            flex-shrink: 0;
+        }
+
+        .faq-answer {
+            color: #555;
+            padding-left: 34px;
+        }
+
+        .contact-info {
+            text-align: center;
+        }
+
+        .contact-info p {
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        .contact-email {
+            display: inline-block;
+            background: #7b68a8;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .contact-email:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 20px rgba(123, 104, 168, 0.4);
+        }
+
+        .back-link {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .back-link a {
+            color: #7b68a8;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+
+        .back-link a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+            color: rgba(255,255,255,0.7);
+            font-size: 0.85rem;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 30px 15px;
+            }
+
+            .section {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="lang-switch">
+            <a href="index.html">한국어</a>
+            <a href="en.html">English</a>
+            <a href="jp.html" class="active">日本語</a>
+        </nav>
+
+        <header>
+            <div class="app-icon">
+                <img src="../assets/icon.png" alt="WigglyDay">
+            </div>
+            <h1>WigglyDay サポート</h1>
+            <p class="subtitle">何かお手伝いできることはありますか？</p>
+        </header>
+
+        <section class="section">
+            <h2>よくある質問 (FAQ)</h2>
+
+            <div class="faq-item">
+                <div class="faq-question">イベントは何個まで登録できますか？</div>
+                <div class="faq-answer">無制限にイベントを登録できます。記念日、誕生日、試験など、好きなだけ追加してください。</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">ウィジェットが更新されません。</div>
+                <div class="faq-answer">ウィジェットを長押しして削除し、再度追加してみてください。問題が続く場合は、アプリを再起動してください。</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">キャラクターを変更したいです。</div>
+                <div class="faq-answer">イベント編集画面でキャラクターアイコンをタップすると、様々なキャラクターから選択できます。</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">通知が届きません。</div>
+                <div class="faq-answer">設定 > WigglyDay > 通知で、通知が許可されているか確認してください。</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">データをバックアップできますか？</div>
+                <div class="faq-answer">現在iCloudバックアップに対応しています。デバイスの設定でiCloudバックアップを有効にしてください。</div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>お問い合わせ</h2>
+            <div class="contact-info">
+                <p>FAQで答えが見つかりませんでしたか？<br>以下のメールアドレスにお問い合わせいただければ、迅速に対応いたします。</p>
+                <a href="mailto:fitwarejay@gmail.com" class="contact-email">fitwarejay@gmail.com</a>
+            </div>
+        </section>
+
+        <div class="back-link">
+            <a href="../jp.html">← WigglyDay ホームに戻る</a>
+        </div>
+
+        <footer>
+            <p>© 2026 fitwarejay Inc.</p>
+        </footer>
+    </div>
+</body>
+</html>
